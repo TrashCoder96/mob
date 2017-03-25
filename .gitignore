@@ -19,7 +19,6 @@
 /res/*/current/
 
 # build folder
-/www/**
 
 # IDE
 # sublime
