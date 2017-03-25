@@ -1,0 +1,62 @@
+{
+  "generator-m-ionic": {
+    "answers": {
+      "appName": "ionic-jhipster",
+      "appId": "comp.company.project",
+      "ionicCss": false,
+      "bowerPackages": [
+        "angular-resource#^1.5.5",
+        "ngstorage#^0.3.10",
+        "angular-cookies#^1.5.5",
+        "angular-aria#1.5.2",
+        "ngInfiniteScroll#1.2.2",
+        "angular-bootstrap#1.2.5",
+        "angular-cache-buster#0.4.3",
+        "angular-sanitize#1.5.2",
+        "angular-aria#1.5.2"
+      ],
+      "platforms": [],
+      "plugins": [],
+      "appModule": "ionic-jhipster",
+      "ecosystems": []
+    }
+  },
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "nast"
+    },
+    "jhipsterVersion": "4.1.1",
+    "baseName": "nast",
+    "packageName": "nast",
+    "packageFolder": "nast",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "hibernateCache": "no",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "jwtSecretKey": "913a82510cafb742403683febf799413ee3f047a",
+    "clientFramework": "angular1",
+    "useSass": false,
+    "clientPackageManager": "yarn",
+    "applicationType": "monolith",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-ionic",
+        "version": "2.2.2"
+      }
+    ],
+    "enableTranslation": false,
+    "herokuAppName": null,
+    "jhipsterHome": "../nast"
+  }
+}
