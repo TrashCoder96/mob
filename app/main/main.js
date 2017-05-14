@@ -8,7 +8,7 @@ angular.module('main', [
         'ngResource',
         'ngCookies',
         'ngAria',
-        'ngCacheBuster', 
+        'ngCacheBuster',
         'infinite-scroll'
         // TODO: load other modules selected during generation
 ])
@@ -30,7 +30,7 @@ angular.module('main', [
                     }
                 ]
         }
-})
+        })
     .state('login', {
         parent: 'app',
         url: '/login',
@@ -56,5 +56,18 @@ angular.module('main', [
                     controller: 'HomeCtrl as vm'
                 }
             }
-        });
+        })
+        .state('tests', {
+            parent: 'app',
+            url: '/tests',
+            data: {
+               authorities: []
+            },
+            views: {
+               'pageContent': {
+                 templateUrl: 'main/templates/tests.html',
+                 controller: 'TestsCtrl as vm'
+            }
+        }
+      });
 });

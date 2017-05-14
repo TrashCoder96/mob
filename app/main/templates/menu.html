@@ -34,23 +34,31 @@
         <ion-content ng-switch="vm.isAuthenticated()">
             <ion-list>
                 <ion-item menu-close ui-sref="home">
-                    <span>Home</span>
+                    <span>Главная</span>
                 </ion-item>
+
                 <ion-item ng-switch-when="false" menu-close ng-click="vm.login()">
-                    <span>Sign In</span>
+                    <span>Войти</span>
                 </ion-item>
+
                 <ion-item ng-switch-when="false" menu-close ui-sref="register">
-                    <span>Register</span>
+                    <span>Зарегистрироваться</span>
                 </ion-item>
+
                 <ion-item ng-switch-when="true" menu-close ui-sref="settings">
-                    <span>Settings</span>
+                    <span>Настройки</span>
                 </ion-item>
+
                 <ion-item ng-switch-when="true" menu-close ui-sref="password">
-                    <span>Password</span>
+                    <span>Пароль</span>
                 </ion-item>
-                
+
+                <ion-item ng-switch-when="true" menu-close ui-sref="tests">
+                    <span>Teсты</span>
+                </ion-item>
+
                 <ion-item ng-switch-when="true" menu-close ng-click="vm.logout()">
-                    <span>Log Out</span>
+                    <span>Выход</span>
                 </ion-item>
             </ion-list>
         </ion-content>
