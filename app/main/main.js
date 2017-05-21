@@ -69,5 +69,19 @@ angular.module('main', [
                  controller: 'TestsCtrl as vm'
             }
         }
-      });
+      })
+      .state('test', {
+        parent: 'app',
+        url: '/test',
+        data: {
+          authorities: []
+        },
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/test.html',
+            controller: 'TestCtrl as vm'
+          }
+        }
+      })
+    ;
 });

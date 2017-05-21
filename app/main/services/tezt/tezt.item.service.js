@@ -2,13 +2,13 @@
   'use strict';
   angular
     .module('main')
-    .factory('Tezt', Tezt);
+    .factory('TeztItem', TeztItem);
 
-  Tezt.$inject = ['$resource', 'Config'];
+  TeztItem.$inject = ['$resource', 'Config'];
 
-  function Tezt($resource, Config) {
+  function TeztItem($resource, Config) {
 
-    var resourceUrl = Config.ENV.SERVER_URL + '/api/tezts/:id';
+    var resourceUrl = Config.ENV.SERVER_URL + '/api/tezt-items/:id';
 
     return $resource(resourceUrl, {}, {
       'query': { method: 'GET', isArray: true},
