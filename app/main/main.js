@@ -57,29 +57,16 @@ angular.module('main', [
                 }
             }
         })
-        .state('tests', {
-            parent: 'app',
-            url: '/tests',
-            data: {
-               authorities: []
-            },
-            views: {
-               'pageContent': {
-                 templateUrl: 'main/templates/tests.html',
-                 controller: 'TestsCtrl as vm'
-            }
-        }
-      })
-      .state('test', {
+      .state('books', {
         parent: 'app',
-        url: '/test',
+        url: '/books',
         data: {
           authorities: []
         },
         views: {
           'pageContent': {
-            templateUrl: 'main/templates/test.html',
-            controller: 'TestCtrl as vm'
+            templateUrl: 'main/templates/books.html',
+            controller: 'BookCtrl as vm'
           }
         }
       })

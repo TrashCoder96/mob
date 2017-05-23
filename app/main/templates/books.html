@@ -1,0 +1,17 @@
+<ion-view view-title="Книги">
+  <ion-content>
+    <div ng-repeat="book in vm.books">
+      <ion-item>{{book.title}}</ion-item>
+      <button class="button button-assertive" ng-click="vm.delete(book.id)">Удалить</button>
+    </div>
+    <div>
+      <ion-item>
+        <input type="text" ng-model="vm.book.title" />
+        <br/>
+        <input type="text" ng-model="vm.book.author" />
+        <br/>
+        <button class="button button-balanced" ng-click="vm.create()">Создать</button>
+      </ion-item>
+    </div>
+  </ion-content>
+</ion-view>

@@ -15,19 +15,19 @@ var bsInit = function (paths, openOverride) {
     };
     var url = require('url');
     var proxy = require('proxy-middleware');
-    var apiProxy = url.parse('http://nast-111222333.herokuapp.com:80/api');
+    var apiProxy = url.parse('http://jhip-1.herokuapp.com/api');
     apiProxy.route = '/api';
-    var oauthProxy = url.parse('http://nast-111222333.herokuapp.com:80/oauth');
+    var oauthProxy = url.parse('http://jhip-1.herokuapp.com/oauth');
     oauthProxy.route = '/oauth';
     bsOptions.server.middleware = [proxy(apiProxy), proxy(oauthProxy)];
 
     console.log('[' + chalk.green('proxy') + '] ' + chalk.bold('Proxy Configuration:'));
     console.log(chalk.dim(' ---------------------------------------'));
     console.log('     Path: ' + chalk.green('/api'));
-    console.log('   Map to: ' + chalk.green('http://nast-111222333.herokuapp.com:80/api'));
+    console.log('   Map to: ' + chalk.green('http://jhip-1.herokuapp.com/api'));
     console.log(chalk.dim(' ---------------------------------------'));
     console.log('     Path: ' + chalk.green('/oauth'));
-    console.log('   Map to: ' + chalk.green('http://nast-111222333.herokuapp.com:80/ouath'));
+    console.log('   Map to: ' + chalk.green('http://jhip-1.herokuapp.com/ouath'));
     console.log(chalk.dim(' ---------------------------------------'));
 
     if (options.open === false) {
